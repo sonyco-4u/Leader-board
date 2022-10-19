@@ -1,7 +1,7 @@
 import './style.css';
-import { displayScores } from './listscore';
+// import { displayScores } from './listscore';
 
-displayScores();
+// displayScores();
 // const tittle = document.createElement('h3');
 // tittle.textContent = 'Webpack made easy!';
 

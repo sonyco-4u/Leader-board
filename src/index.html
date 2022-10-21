@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leaderboard</title>
-</head>
-<body>
-<header>
-  <h1 class="header">Leaderboard</h1>
-</header>
-  <div class="main-container d-flex">
-  <section class="first-section">
-    <div class="score-header d-flex">
-        <h2>Recent scores</h2>
-        <button type="submit">refresh</button>
-    </div>
-      <div class="ul" id="ul">
-          <ul class="scores" id="scores">
-          </ul>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Leaderboard <i class="fa-solid fa-trophy"></i></h1>
+    </header>
+    <section class="container-inner">
+      <div class="main">
+        <div class="leaderboard">
+          <h2>Recent scores</h2>
+          <button id="refresh-btn">Refresh</button>
         </div>
-
-    </section>
-
-    <section class="second-section" id="second-part">
-        <div class="header" id="header">
-          <h1>Add your score</h1>
+        <div class="add">
+          <h2>add your score</h2>
         </div>
-        <form id="form" class="d-flex">
-          <input type="text" id="first-input" name="first_task" placeholder=" your name">
-          <input type="text" id="input" name="new_task" placeholder="your score">
-          <button class="submit" type="submit" title="submit">Submit</button>
+      </div>
+      <div class="score">
+        <ul class="scorelist"></ul>
+        <form action="" id="form-add">
+          <div>
+            <input type="text" name="name" placeholder="Your Name" />
+          </div>
+          <div>
+            <input type="text" name="score" placeholder="Your Score" />
+          </div>
+          <button type="submit">submit</button>
         </form>
+      </div>
     </section>
-  </div>
-</body>
-<script src="index.js"></script>
+  </body>
 </html>
